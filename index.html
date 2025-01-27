@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,700;1,700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorteador de Números | Rocketseat</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Coded by ReverseGGamerG [Guilherme Araujo Martins] -->
+<body>
+  <header id="first-header">
+    <img src="./img/Clip path group.svg" alt="">
+    <h1>NUMBERS</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="main-content">
+        <header>
+          <h2>ONLINE - GRATUITO</h2>
+          <h3>SORTEADOR DE NÚMEROS</h3>
+        </header>
+
+        <div class="main-info desktop-only">
+          <div class="info">
+            <img src="./img/person.svg" alt="">
+
+            <div>
+              <h4>Como funciona o sorteador de números?</h4>
+
+              <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.</p>
+            </div>
+          </div>
+
+          <div class="info">
+            <img src="./img/person.svg" alt="">
+
+            <div>
+              <h4>Posso escolher o intervalo dos números?</h4>
+
+              <p>Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="aside">
+        <h3>QUERO SORTEAR:</h3>
+        <p>defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
+
+        <form action="get">
+          <fieldset>
+            <div class="input-wrapper">
+              <div class="input">
+                <label for="quantity">NÚMEROS</label>
+                <div>
+                  <input
+                  name="quantity"
+                  id="quantity" 
+                  required
+                  type="text">
+                </div>
+              </div>
+
+              <div class="input">
+                <label for="initial">DE</label>
+                <input
+                name="initial"
+                id="initial"
+                required 
+                type="text">
+              </div>
+
+              <div class="input">
+                <label for="final">DE</label>
+                <input
+                name="final"
+                id="final"
+                required
+                type="text">
+              </div>
+            </div>
+
+            <div class="switch-wrapper">
+              <div class="switch">
+                <input
+                required
+                id="dont"
+                name="dont"
+                type="checkbox">
+
+                <span class="slider"></span>
+              </div>
+
+              <label for="dont">Não repetir número</label>
+            </div>
+          </fieldset>
+
+          <div class="button">
+            <button id="submit">Sortear <img src="./img/arrow.svg" alt=""></button>
+          </div>
+        </form>
+      </div>
+
+      <div class="main-info mobile-only">
+          <div class="info">
+            <img src="./img/person.svg" alt="">
+
+            <div>
+              <h4>Como funciona o sorteador de números?</h4>
+
+              <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.</p>
+            </div>
+          </div>
+
+          <div class="info">
+            <img src="./img/person.svg" alt="">
+
+            <div>
+              <h4>Posso escolher o intervalo dos números?</h4>
+
+              <p>Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
