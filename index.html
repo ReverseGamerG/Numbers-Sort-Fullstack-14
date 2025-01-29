@@ -21,8 +21,8 @@
     <div class="container">
       <div class="main-content">
         <header>
-          <h2>ONLINE - GRATUITO</h2>
-          <h3>SORTEADOR DE NÚMEROS</h3>
+          <h2 aria-label="ONLINE - GRATUITO"></h2>
+          <h3>Sorteador de números</h3>
         </header>
 
         <div class="main-info desktop-only">
@@ -52,6 +52,8 @@
         <h3>QUERO SORTEAR:</h3>
         <p>defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
 
+        <div class="numbers-wrapper"></div>
+        
         <form action="get">
           <fieldset>
             <div class="input-wrapper">
@@ -60,7 +62,7 @@
                 <div>
                   <input
                   name="quantity"
-                  id="quantity" 
+                  id="quantity"
                   required
                   type="text">
                 </div>
@@ -68,27 +70,30 @@
 
               <div class="input">
                 <label for="initial">DE</label>
-                <input
-                name="initial"
-                id="initial"
-                required 
-                type="text">
+                <div>
+                  <input
+                  name="initial"
+                  id="initial"
+                  required 
+                  type="text">
+                </div>
               </div>
 
               <div class="input">
                 <label for="final">DE</label>
-                <input
-                name="final"
-                id="final"
-                required
-                type="text">
+                <div>
+                  <input
+                  name="final"
+                  id="final"
+                  required
+                  type="text">
+                </div>
               </div>
             </div>
 
             <div class="switch-wrapper">
               <div class="switch">
                 <input
-                required
                 id="dont"
                 name="dont"
                 type="checkbox">
@@ -101,7 +106,11 @@
           </fieldset>
 
           <div class="button">
-            <button id="submit">Sortear <img src="./img/arrow.svg" alt=""></button>
+            <button id="submit" aria-label="Sortear">
+              <p>Sortear</p>
+              
+              <img src="./img/arrow.svg" alt="">
+            </button>
           </div>
         </form>
       </div>
@@ -129,5 +138,7 @@
       </div>
     </div>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
