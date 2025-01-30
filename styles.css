@@ -71,8 +71,7 @@ body{
   background: url(./img/bg.svg) no-repeat bottom/cover 
   var(--background-primary);
   color: white;
-  padding-inline: 2.75rem;
-  padding-top: 2.75rem;
+  padding: 2.75rem 2.25rem 6rem;
   height: 100vh;
 }
 
@@ -83,6 +82,7 @@ html{
 
 main{
   padding-block: 2.25rem;
+  height: 100vh;
 }
 
 #first-header{
@@ -304,7 +304,7 @@ main{
       }
 
       & .button{
-        max-width: 30.125rem;
+        width: 100%;
 
         & button{
           cursor: pointer;
@@ -313,7 +313,7 @@ main{
           justify-content: center;
           width: 100%;
           gap: .5rem;
-          max-width: 30.125rem;
+          width: 100%;
           border: 0;
           padding-block: 1rem;
           border-radius: .5rem;
