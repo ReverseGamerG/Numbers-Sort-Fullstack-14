@@ -135,17 +135,27 @@ main{
     display: flex;
     flex-direction: column;
 
-    & h3{
-      font: var(--l-md);
-      color:var(--content-primary);
-      margin: unset;
-      margin-bottom: 2px;
+    & .align-items{
+      align-items: center;
+      justify-content: center;
     }
-    
-    & p{
-      margin: unset;
-      font: var(--p-lg);
-      color:var(--content-secondary);
+
+    & .text-wrapper{
+      display: flex;
+      flex-direction: column;
+
+      & h3{
+        font: var(--l-md);
+        color:var(--content-primary);
+        margin: unset;
+        margin-bottom: 2px;
+      }
+      
+      & p{
+        margin: unset;
+        font: var(--p-lg);
+        color:var(--content-secondary);
+      }
     }
 
     & form{
@@ -427,7 +437,7 @@ main{
   justify-content: center;
   align-items: center;
   margin-top: 2.5rem;
-  height: 12.5rem;
+  min-height: 12.5rem;
 
   & div{
     display: flex;
